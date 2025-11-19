@@ -83,6 +83,7 @@ public class PlayerController : MonoBehaviour, IDamageable
         {
             limbs[i].SetActive(false);
         }
+        PhotonNetwork.LoadLevel("Lobby");
 
 
 

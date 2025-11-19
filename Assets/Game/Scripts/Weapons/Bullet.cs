@@ -24,13 +24,7 @@ public class Bullet : MonoBehaviour
     {
         Vector2 direction = rb.linearVelocity.normalized;
 
-        //Raycast 
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, 3f, playerLayer);
-        if (hit.collider != null)
-        {
-            //this means that the bullet is goingg to hit the player
-            manager.StartSlowmo();
-        }
+
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -49,11 +43,7 @@ public class Bullet : MonoBehaviour
             dmg.TakeDamage(1);
         }
 
-        if (collision.gameObject.tag == "Player")
-        {
-            //this means we hit the player so stop slowmo
-            GameManager.StopSlowmo();
-        }
+
 
 
 
