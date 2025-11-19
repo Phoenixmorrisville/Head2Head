@@ -132,7 +132,7 @@ MonoBehaviour:
   groundCheck: {fileID: 7820992260835599593}
   boxCollider: {fileID: 6704896640960977519}
   playerSpeed: 10
-  jumpForce: 100
+  jumpForce: 65
   playerHealth: 1
   groundDetectionRange: 1.5
   groundLayer:
